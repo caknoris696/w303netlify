@@ -1,0 +1,115 @@
+*{margin: 0;padding: 0;}
+
+html{
+    font-family:Arial, serif;
+}
+
+body{
+    background:#FFF;
+}
+nav ul.topm{
+    list-style: none;   
+}
+ul.topm li{
+    text-align: center;  
+}
+ul.topm li a{
+    background:#2164E1;
+    color:#fff;
+    text-decoration: none;
+}
+.img-respo{
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.logo > img{
+    max-width: 90%;
+    display: block;
+    margin: 0 auto;
+}
+main{
+    background: #2E2646;
+    color:#fff;
+}
+article{
+    padding:15px;
+    letter-spacing: 0.4px;
+}
+h1, h2{
+    margin:5px 0;
+}
+h1{
+    font-size:22px;
+}
+h2{
+    font-size:20px;
+}
+p{
+    margin:10px 0;
+}
+footer{
+    text-align: center;
+    margin:10px 0;
+}
+.button{
+    display: block;
+    text-align: center;
+    background: #fff;
+    padding:10px 0;
+    border-radius: 15px;
+    text-decoration: none;
+}
+
+@media screen and (min-width:600px){
+    #wrapper{
+        width:960px;
+        margin:20px auto;
+    }
+    .logo{
+        width:30%;
+    }
+    .akiri{
+        width:70%;
+        height: 90px;
+        vertical-align: middle;
+    }
+    .logo, .akiri{
+        float:left;
+    }
+    .akiri nav{
+        margin:30px 0;
+    }
+    ul.topm li{
+        display:inline-flex;
+        justify-content: flex-end;
+    }
+    ul.topm li a{
+        padding:10px 30px;
+        border-radius: 15px;
+    }
+    
+}
+
+@media screen and (max-width:599px){
+    #wrapper{
+        width:100%;
+        margin:20px auto;
+    }
+    ul.topm li a{
+        width:100%;
+        display:block;
+        border-bottom: 1px solid #ccc;
+        padding:3px 0;
+    }
+    .logo > img{
+        margin-top:15px;
+        margin-bottom:15px;
+    }
+}
